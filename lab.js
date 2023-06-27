@@ -251,6 +251,7 @@ class Phone {
   }
   sell() {
     this.sold = true
+    console.log(`${this.brand} ${this.model} has been sold`)
   }
 
   changePrice(newPrice) {
@@ -366,10 +367,9 @@ class Vehicle {
     this.mileage = mileage
   }
   move(miles) {
-    this.mileage = miles
+    this.mileage += miles
     console.log(this.mileage)
   }
-
 }
 
 
